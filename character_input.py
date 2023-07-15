@@ -1,6 +1,7 @@
 def main():
     name = input("Please enter you name: ").strip().capitalize()
     age = get_age()
+    
     future_year = year_calculator(age)
     print(f"Hello {name},\nyou will be 100 years old in {future_year}.")
 
