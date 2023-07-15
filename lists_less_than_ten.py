@@ -1,10 +1,11 @@
-my_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+my_list = [1, 1, 2, 3, 5, 8, 0, 13, 21, 34, 55, 89]
 
 def main():
     number = get_input()
     modified_list = filter_list(my_list,number)
-    if modified_list:
-        for element in modified_list:
+    sorted_list = sort_list(modified_list)
+    if sorted_list:
+        for element in sorted_list:
             print(element)
     else:
         print("Nothing found.")
@@ -17,6 +18,9 @@ def get_input():
         except ValueError:
             print("Number is not valid.")
 
+def sort_list(modified_list):
+    return sorted(modified_list)
+    
 def filter_list(my_list,number):
     return [element for element in my_list if element < number]
 
