@@ -7,7 +7,7 @@ def main():
 def get_age():
     while True:
         try:
-            age = int(input("Please enter you age: ").strip())
+            age = int(input("Please enter you age: "))
             if 0<= age <= 100:
                 return age
             else:
