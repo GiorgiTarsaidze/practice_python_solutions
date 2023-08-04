@@ -17,10 +17,7 @@ def parse_titles(request):
     return titles
 
 def title_list(titles):
-    titles_list = []
-    for heading in titles:
-        titles_list.append(heading.get_text())
-    return titles_list
+    return [heading.get_text() for heading in titles]
 
 if __name__ == "__main__":
     main()
