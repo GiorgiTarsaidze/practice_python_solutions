@@ -18,7 +18,7 @@ def get_p_tags(request):
     return a_tags
 
 def generate_article(p_tags):
-    return [i.get_text() for i in p_tags]
+    return [element.get_text() for element in p_tags]
 
 if __name__ == "__main__":
     main()
