@@ -1,5 +1,5 @@
 def main():
-    file_name = 'namelist.txt'
+    file_name = 'text_files/nameslist.txt'
     print(open_file(file_name))
 
 def open_file(filename):
