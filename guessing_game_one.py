@@ -21,6 +21,7 @@ def get_input():
         if ask.lower() == "exit":
             return None
         ask = int(ask)
+
         if ask > 9 or ask < 1:
             print("Invalid input, your number must be between 1 and 9.")
         else:
